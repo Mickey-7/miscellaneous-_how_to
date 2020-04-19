@@ -1,0 +1,14 @@
+<h3>Upload Image</h3>
+<hr>
+<input type="file" (change)="onFileChanged($event)">
+<input type="button" value="Upload" (click)="onUpload()">
+<div *ngIf="message">{{message}}</div>
+
+
+<h3>Retrieve Image</h3>
+<hr>
+<input type="text" [(ngModel)]="imageName" placeholder="enter image name">
+<input type="button" value="Retrieve" (click)="getImage()">
+<div *ngIf="retrievedImage" class="wrapper">
+  <img [src]="retrievedImage" alt="">
+</div>
