@@ -1,0 +1,5 @@
+links below for references :
+
+https://stackoverflow.com/questions/34490218/how-to-make-a-windows-notification-in-java
+
+https://stackoverflow.com/questions/42420903/systemtray-not-supported-on-windows-10
