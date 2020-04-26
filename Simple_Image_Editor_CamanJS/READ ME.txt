@@ -1,0 +1,18 @@
+CamanJS : http://camanjs.com/
+
+    reference for interactive image editor :
+
+        https://www.sitepoint.com/manipulating-images-web-pages-camanjs/
+        https://code.tutsplus.com/tutorials/creating-an-image-editor-using-camanjs-applying-basic-filters--cms-30251
+
+
+    JQuery for easy DOM manupulation :
+
+        install JQuery 
+            => npm i jquery 
+        then invoke on index.html
+            => <script src="node_modules/jquery/dist/jquery.js"></script>
+
+
+
+

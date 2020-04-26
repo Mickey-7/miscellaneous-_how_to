@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- invoke jquery -->
+       <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>CamanJS</title>
+</head>
+<body >
+  
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 50%;">
+            <div>
+                <h3>Sample Image</h3>
+                <hr>
+                <img style="width: 100%;" id="canvas" src="./CamanJS-4.1.1/examples/images/test1_640.jpg">
+            </div>
+        
+            <!-- grid-auto-rows sets the height of the row for every button -->
+            <div style=" display: grid; grid-template-columns: repeat(auto-fit,minmax(80px,2fr)); grid-auto-rows: 35px;">
+                <button id="noFilterBtn">No Filter</button>
+                <button id="vintageBtn">Vintage</button>
+                <button id="lomoBtn">Lomo</button>
+                <button id="clarityBtn">Clarity</button>
+                <button id="sinCityBtn">Sin City</button>
+                <button id="sunriseBtn">Sunrise</button>
+                <button id="crossProcessBtn">Cross Process</button>
+                <button id="orangePeelBtn">Orange Peel</button>
+                <button id="loveBtn">Love</button>
+                <button id="grungyBtn">Grungy</button>
+                <button id="jarquesBtn">Jarques</button>
+                <button id="pinholeBtn">Pinhole</button>
+                <button id="oldBootBtn">Old Boot</button>
+                <button id="glowingSunBtn">Glowing Sun</button>
+                <button id="hazyDaysBtn">Hazy Days</button>
+                <button id="herMajestyBtn">Her Majesty</button>
+                <button id="nostalgiaBtn">Nostalgia</button>
+                <button id="hemingwayBtn">Hemingway</button>
+                <button id="concentrateBtn">Concentrate</button>
+                <!-- grid-column : span start / end -> to occupy all the remaing space -->
+                <button id="download-btn" style="grid-column: span 5 / auto;">Download</button>
+            </div>
+        </div>
+
+
+
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(10px,11fr));">
+            <!-- padding : top right bottom left -->
+            <!-- padding shorthand : top right/left bottom   -->
+            <div style="padding: 70px 0px 0px 50px;">
+                <label>brightness:</label><br>
+                <input type="range" id="brightness" min="-100" max="100" value="0">
+                <br>
+                <label>vibrance: </label><br>
+                <input type="range" id="vibrance" min="-100" max="100" value="0">
+                <br>
+                <label>hue: </label><br>
+                <input type="range" id="hue" min="0" max="100" value="0">
+                <br>
+                <label>clip: </label><br>
+                <input type="range" id="clip" min="0" max="100" value="0">
+                <br>
+                <labe>sharpen: </label><br>
+                <input type="range" id="sharpen" min="0" max="100" value="0">
+                <br> 
+                <labe>stackBlur: </label><br>
+                <input type="range" id="stackBlur" min="0" max="20" value="0">
+                <br>
+                <labe>contrast: </label><br>
+                <input type="range" id="contrast" min="-100" max="100" value="0">
+                <br>
+                <labe>saturation: </label><br>
+                <input type="range" id="saturation" min="-100" max="100" value="0">
+                <br>
+                <labe>exposure: </label><br>
+                <input type="range" id="exposure" min="-100" max="100" value="0">
+                <br>
+                <labe>sepia: </label><br>
+                <input type="range" id="sepia" min="0" max="100" value="0">
+                <br>
+                <labe>noise: </label><br>
+                <input type="range" id="noise" min="0" max="100" value="0">
+                <br> 
+            </div>                                                                                                                                                                                                                                     
+        </div>
+
+    </div>
+
+    <!-- invoke camanjs -->
+    <script src="./CamanJS-4.1.1/dist/caman.full.min.js"></script>
+    <!-- invoke script -->
+    <script src="script.js"></script>
+ 
+</body>
+</html>
